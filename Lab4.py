@@ -41,8 +41,6 @@ def print_prime_factors(num):
             a += 1
     print()
 
-print(print_prime_factors(25))
-
             #figure out for 2
 
 
