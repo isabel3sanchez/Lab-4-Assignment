@@ -35,11 +35,12 @@ def print_prime_factors(num):
         if num % a == 0 and num != 2:
             print(f"{a}")
             if num != a:
-                  print("* ", end='')
-            num = num // a
+                num = num // a
+                print("* ", end='')
         else:
             a += 1
         break
+    print()
 
             #figure out for 2
 
