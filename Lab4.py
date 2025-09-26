@@ -29,15 +29,14 @@ def is_prime (integer):
 
 #Function 3: Prime Factorization
 def print_prime_factors(num):
+    print(f"{num} = ", end= '')
     a = 1
     while num > 1 and num % a == 0:
         for i in range(2, num):
             if num % i == 0:
-                print(i, "*", end= '')
+                print(f"{i}", "*", end= '')
                 num = num // i
             else:
-                print(f"{num} = {num}")
-        break
 
 
 
