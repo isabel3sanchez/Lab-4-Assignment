@@ -36,8 +36,7 @@ def print_prime_factors(num):
             if num % i == 0:
                 print(f"{i}", "*", end= '')
                 num = num // i
-            else:
-                print(num)
+        print(num)
         break
 
 
