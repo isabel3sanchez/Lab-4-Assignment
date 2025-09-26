@@ -30,14 +30,14 @@ def is_prime (integer):
 #Function 3: Prime Factorization
 def print_prime_factors(num):
     print(f"{num} = ", end= '')
-    a = 1
-    while num > 1 and num % a == 0:
-        for i in range(2, num):
-            if num % i == 0:
-                print(f"{i}", "*", end= '')
-                num = num // i
-        print(num)
-        break
+    a = 2
+    while num > 1:
+        if num % a == 0:
+            print(f"{a}", "* ", end= '')
+            num = num // a
+        else:
+            a += 1
+    print(num)
 
 
 
