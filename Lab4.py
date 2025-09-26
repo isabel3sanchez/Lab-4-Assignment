@@ -34,9 +34,9 @@ def print_prime_factors(num):
     while num > 1:
         if num % a == 0 and num != 2:
             print(f"{a}", end= '')
-            num = num // a
             if num != a:
                 print("* ", end='')
+            num = num // a
         else:
             a += 1
     print()
