@@ -39,6 +39,9 @@ def print_prime_factors(num):
             num = num // a
         else:
             a += 1
+        break
+
+            #figure out for 2
 
 
 
