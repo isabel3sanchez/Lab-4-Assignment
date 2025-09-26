@@ -38,6 +38,7 @@ def print_prime_factors(num):
                 num = num // i
             else:
                 print(num)
+        break
 
 
 
