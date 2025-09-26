@@ -32,14 +32,16 @@ def print_prime_factors(num):
     print(f"{num} = ", end= '')
     a = 2
     while num > 1:
-        if num % a == 0 and num != 2:
-            print(f"{a}", end= '')
+        if num % a == 0:
+            print(f"{a} ", end= '')
             if num != a:
                 print("* ", end='')
             num = num // a
         else:
             a += 1
     print()
+
+print(print_prime_factors(25))
 
             #figure out for 2
 
